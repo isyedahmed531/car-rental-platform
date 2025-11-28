@@ -37,6 +37,9 @@ ul a {
     font-weight: 600;
     margin-top: 10px;
 }
+ul i{
+    padding-right:5px ;
+}
 
        
 /* .text-center {
