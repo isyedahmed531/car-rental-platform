@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0b1020;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#featured{
+    width: 90%;
+    margin: 40px auto;
+}
+
+#header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cards-container{
+    margin-top: 25px;
+    gap: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1 fr)); */
+    display: flex;
+}
+
+.car-card{
+    width: 400px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #1a1f25;
+    transition: 0.3;
+}
+
+.car-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#trusted{
+    margin: 40px 20px 60px;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    /* #header-row{
+        flex-direction: column;
+        gap: 10px;
+    } */
+
+    #cards-container{
+        flex-direction: column;
+    }
+}
