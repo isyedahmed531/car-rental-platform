@@ -248,3 +248,115 @@ body {
 .nav-link:hover {
   color: white !important;
 }
+
+#features {
+  display: flex;
+  padding: 4rem 0;
+  background-color: #0b1020;
+  gap: 45px;
+  justify-content: center;
+}
+
+.features-card {
+  width: 410px;
+  color: rgba(230, 238, 248, 0.85);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: 0.5s ease;
+}
+
+.features-card i {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.features-card:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cars-container {
+  padding: 4rem 0;
+  background-color: #0f1724;
+}
+
+.heading-txt {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(230, 238, 248, 0.85) !important;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.144) !important;
+  color: rgba(230, 238, 248, 0.85) !important;
+  cursor: pointer;
+}
+
+.featured-cars {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cars-card {
+  width: 300px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  backdrop-filter: blur(2px);
+  transition: 0.4s ease;
+}
+
+.cars-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(2, 6, 23, 0.45);
+}
+
+.cars-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.cars-dtl {
+  color: rgba(230, 238, 248, 0.85);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.cars-dtl h4 {
+  font-size: 20px;
+}
+
+#trusted {
+  padding: 40px 20px 60px;
+  background-color: #0f1724;
+  color: rgba(230, 238, 248, 0.85);
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .featured-cars {
+    justify-content: center;
+  }
+
+  #features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
