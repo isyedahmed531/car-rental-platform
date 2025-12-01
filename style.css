@@ -1,0 +1,56 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg: #0b1020;
+    --card: #0f1724;
+    --muted: #9aa4b2;
+    --accent: #2563eb;
+    --accent-2: #6d28d9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    padding: 72px;
+}
+
+html,body {
+    height: 100%;
+    background: linear-gradient(180deg, #05070b 0%, var(--bg)60%);
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1030;
+    background: rgba(16, 16, 16, 0.6);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    display: flex;
+    letter-spacing: 0.4px;
+}
+
+.nav-link {
+    color: rgba(230, 238, 240, 0.85) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: white !important;
+}  
